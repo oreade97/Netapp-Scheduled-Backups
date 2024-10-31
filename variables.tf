@@ -23,3 +23,9 @@ variable "backup_schedule" {
 variable "service_account_key_file" {
   description = "The path to the service account key file"
 }
+
+variable "backup_vault_name" {
+  description = "The name of the NetApp backup vault for storing backups"
+  type        = string
+  default     = "netapp-backup-vault"
+}

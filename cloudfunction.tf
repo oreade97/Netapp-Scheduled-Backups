@@ -30,15 +30,6 @@ resource "google_cloudfunctions_function" "netapp_backup_function" {
     VOLUME_NAME = var.volume_name
     REGION      = var.region
     PROJECT_ID  = var.project_id
-  }
-}
-
-
-resource "google_netapp_backup_vault" "test_backup_vault" {
-  name = "test-backup-vault"
-  location = "us-east4"
-  description = "Terraform created vault"
-  labels = { 
-    "creator": "testuser"
+    BACKUP_VAULT_NAME = var.backup_vault_name
   }
 }
