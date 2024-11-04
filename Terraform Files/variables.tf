@@ -29,3 +29,9 @@ variable "backup_vault_name" {
   type        = string
   default     = "netapp-backup-vault"
 }
+
+variable "gcp_service_list" {
+  type        = list(string)
+  description = "The list of apis needed"
+  default     = []
+}
