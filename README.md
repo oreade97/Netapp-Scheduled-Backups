@@ -4,7 +4,7 @@ The function is designed to be triggered by Cloud Scheduler through a Pub/Sub to
 ### **How it works**
 #### **Architecture Diagram**
 
-![[Pasted image 20241203101853.png]]
+![architecture diagram](backup_architecture_diagram.png "Backup Architecture Diagram")
 #### **Prerequisites**
 ##### APIs
 The following APIs need to be enabled in your GCP project
